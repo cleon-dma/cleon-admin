@@ -1,0 +1,120 @@
+/* Login style */
+
+#login {
+    width: 740px;
+}
+
+.wrapall {
+    width: 740px;
+    display: flex;
+    padding: 8% 0 0 !important;
+    ;
+}
+
+.wrapall .wrap-login-logo,
+.wrapall .wrap-login-form {
+    width: 50%;
+    padding: 30px 20px 50px 20px;
+    background-color: #fff;
+}
+
+.wrapall .wrap-login-logo {
+    float: left;
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.wrapall .wrap-login-form {
+    float: right;
+}
+
+.login form {
+    box-shadow: none
+}
+
+.wrapall h1 a,
+.login h1 a {
+    width: 160px;
+    height: 25px;
+    margin-top: 30%;
+    background-image: url(../img/logo-f0f0f0.png);
+    background-size: 160px 25px;
+}
+
+.wrapall p.hello {
+    padding: 0 20px;
+    text-align: center;
+    color: #cfcfcf;
+}
+
+.wrapall .wrap-login-form p#nav,
+.wrapall .wrap-login-form p#backtoblog {
+    display: none;
+}
+
+#lostpasswordform div.g-recaptcha,
+#loginform div.g-recaptcha {
+    margin: 12px 0 24px 0;
+}
+
+.login #login_error,
+.login .message,
+.login .success {
+    max-width: 350px;
+    margin: 0 auto;
+    text-align: center;
+    border-left: 0;
+    padding: 30px 0 0;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.login #login_error p::after {
+    content: '';
+    display: block;
+    margin: 3px auto;
+    width: 120px;
+    height: 2px;
+    background-color: #fb2056;
+}
+
+@media only screen and (max-width: 680px) {
+
+    #login,
+    .wrapall {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    #login,
+    .wrapall {
+        width: auto;
+        display: block;
+    }
+
+    .wrapall {
+        margin: 0 10px;
+        padding: 0 !important;
+        border: 1px solid #cfcfcf
+    }
+
+    .wrapall .wrap-login-logo,
+    .wrapall .wrap-login-form {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .wrapall .wrap-login-logo,
+    .wrapall .wrap-login-form {
+        float: none;
+    }
+
+    .wrapall h1 a,
+    .login h1 a {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
