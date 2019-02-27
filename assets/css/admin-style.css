@@ -1,7 +1,7 @@
 /* Admin style */
 
 body {
-    font-family: -apple-system,BlinkMacSystemFont,Arial,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Arial, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     background-color: #ecf0f5;
 }
 
@@ -52,7 +52,21 @@ body {
     color: #008749;
 }
 
-#menu-management .menu-edit, #menu-settings-column .accordion-container, .comment-ays, .feature-filter, .imgedit-group, .manage-menus, .menu-item-handle, .popular-tags, .stuffbox, .widget-inside, .widget-top, .widgets-holder-wrap, .wp-editor-container, p.popular-tags, table.widefat {
+#menu-management .menu-edit,
+#menu-settings-column .accordion-container,
+.comment-ays,
+.feature-filter,
+.imgedit-group,
+.manage-menus,
+.menu-item-handle,
+.popular-tags,
+.stuffbox,
+.widget-inside,
+.widget-top,
+.widgets-holder-wrap,
+.wp-editor-container,
+p.popular-tags,
+table.widefat {
     box-shadow: none;
 }
 
@@ -104,6 +118,11 @@ body {
 ul#adminmenu a.wp-has-current-submenu:after,
 ul#adminmenu>li.current>a.current:after {
     display: none;
+}
+
+#adminmenu .wp-submenu-head,
+#adminmenu a.menu-top {
+    font-size: 13px;
 }
 
 .wp-core-ui .button-primary {}
