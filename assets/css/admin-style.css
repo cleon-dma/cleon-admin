@@ -154,3 +154,9 @@ textarea {
     border: 1px solid #e0e0e0;
     box-shadow: none
 }
+
+/* Typo */
+
+.row-title {
+    font-weight: 400 !important;
+}

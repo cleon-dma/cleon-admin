@@ -28,7 +28,7 @@ add_action( 'login_enqueue_scripts', 'my_login_logo' );
 
 function cleon_login_message( $message ) {
     if ( empty($message) ){
-        return '<p class="hello"><i>Đường về hái nụ mù sa<br>Đưa theo dài một nương cà tím thôi</i></p>';
+        return '<p class="hello"><i>Thiết kế web chuyên nghiệp<br>Hỗ trợ: 084 262 5858</i></p>';
     } else {
         return $message;
     }
@@ -37,6 +37,6 @@ add_filter( 'login_message', 'cleon_login_message' );
 
 function login_error_override()
 {
-    return '<p><i>Thôi thì em chẳng yêu tôi<br>Leo lên cành bưởi nhớ người rưng rưng</i></p>☉_☉';
+    return '<p><i>Bạn nhập sai thông tin!<br>Nếu quên tài khoản hoặc mật khẩu vui lòng <a href="?action=lostpassword" title="Lost Password">Click vào đây</a></i></p>☉_☉';
 }
 add_filter('login_errors', 'login_error_override');
