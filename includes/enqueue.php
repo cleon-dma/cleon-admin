@@ -53,14 +53,14 @@ add_action( 'init', function(){
 		global  $wp_scripts;
 		/** @var _WP_Dependency $core */
 		$core = $wp_scripts->registered[ 'jquery-core' ];
-		$core_version = $core->ver;
-		$core->src = "$protocol://cdn.jsdelivr.net/npm/jquery@$core_version/dist/jquery.min.js";
+		//$core_version = $core->ver;
+		$core->src = "$protocol://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js";
 
 		if ( WP_DEBUG ) {
 			/** @var _WP_Dependency $migrate */
 			$migrate         = $wp_scripts->registered[ 'jquery-migrate' ];
-			$migrate_version = $migrate->ver;
-			$migrate->src    = "$protocol://cdn.jsdelivr.net/jquery.migrate/$migrate_version/jquery-migrate.min.js";
+			//$migrate_version = 1.2.1;
+			$migrate->src    = "$protocol://cdn.jsdelivr.net/jquery.migrate/1.2.1/jquery-migrate.min.js";
 		}else{
 			/** @var _WP_Dependency $jquery */
 			$jquery = $wp_scripts->registered[ 'jquery' ];
