@@ -9,7 +9,7 @@ add_filter( 'login_headerurl', 'my_login_logo_url' );
 function my_login_logo_url_title() {
     return 'Tao không nói câu đó, và cả câu này nữa!';
 }
-add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+add_filter( 'login_headertext', 'my_login_logo_url_title' );
 
 /** Add Cleon Logo */
 function my_login_logo() { ?>
